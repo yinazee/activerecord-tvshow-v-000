@@ -7,7 +7,9 @@ class Show < ActiveRecord::Base
   def self.most_popular_show
     # SELECT name FROM shows WHERE rating = highest_rating
     Show.where(rating: self.highest_rating).first
+  end
 
+  def self.lowest_rating
   end
 
 end
